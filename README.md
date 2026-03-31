@@ -11,8 +11,10 @@ The objective is to uncover actionable insights into:
 -Customer segmentation
 
 These insights help businesses make data-driven decisions to improve revenue, marketing strategies, and customer retention.
+
 ---
 <img width="2268" height="1278" alt="Screenshot 2026-03-31 052632" src="https://github.com/user-attachments/assets/d2ac64f6-534e-460c-af85-6d99d05e86a8" />
+
 ---
 📊 Dataset Summary
 Feature	Description
@@ -26,6 +28,7 @@ Purchase Details
 Item Purchased, Category, Purchase Amount, Season, Size, Color
 Behavioral Data
 Discount Applied, Promo Code Used, Previous Purchases, Frequency, Review Rating, Shipping Type
+
 ---
 ⚙️ Tech Stack
 Python → Data Cleaning & Preprocessing
@@ -38,23 +41,30 @@ Power BI → Dashboard & Visualization
 Key steps performed:
 
 Data Loading
-
 df = pd.read_csv("dataset.csv")
+
 Initial Exploration
 df.info() → structure
 df.describe() → statistical summary
+
 Handling Missing Values
 Filled missing review_rating using median rating per product category
+
 Column Standardization
 Converted column names to snake_case
+
 Feature Engineering
 Created age_group from age bins
 Derived purchase_frequency_days
+
 Data Consistency
 Identified redundancy between discount_applied and promo_code_used
 Dropped promo_code_used
+
 Database Integration
 Loaded cleaned dataset into PostgreSQL
+
+---
 🧠 Data Analysis (SQL)
 
 Performed business-driven analysis using SQL:
