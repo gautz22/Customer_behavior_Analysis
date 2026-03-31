@@ -1,5 +1,4 @@
 🛍️ Customer Shopping Behavior Analysis
-📌 Project Overview
 
 This project analyzes customer shopping behavior using transactional data from 3,900 purchases across multiple product categories.
 
